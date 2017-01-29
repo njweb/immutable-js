@@ -5661,50 +5661,43 @@ function hashMerge(a, b) {
  *  of patent rights can be found in the PATENTS file in the same directory.
  */
 
-var Immutable = {};
-// export default {
+var Immutable = {
 
-//   Iterable: Iterable,
+  Iterable: Iterable,
 
-//   // Seq: Seq,
-//   // Collection: Collection,
-//   // Map: Map,
-//   // OrderedMap: OrderedMap,
-//   // List: List,
-//   // Stack: Stack,
-//   // Set: Set,
-//   // OrderedSet: OrderedSet,
+  Seq: Seq,
+  Collection: Collection,
+  Map: Map,
+  OrderedMap: OrderedMap,
+  List: List,
+  Stack: Stack,
+  Set: Set,
+  OrderedSet: OrderedSet,
 
-//   // Record: Record,
-//   // Range: Range,
-//   // Repeat: Repeat,
+  Record: Record,
+  Range: Range,
+  Repeat: Repeat,
 
-//   is: is,
-//   fromJS: fromJS
+  is: is,
+  fromJS: fromJS
 
-// };
-
-// export {
-// 	Iterable,
-
-// 	// Seq,
-// 	// Collection,
-// 	// Map,
-// 	// OrderedMap,
-// 	// List,
-// 	// Stack,
-// 	// Set,
-// 	// OrderedSet,
-
-// 	// Record,
-// 	// Range,
-// 	// Repeat,
-
-// 	// is,
-// 	// fromJS
-// }
+};
 
 exports['default'] = Immutable;
+exports.Iterable = Iterable;
+exports.Seq = Seq;
+exports.Collection = Collection;
+exports.Map = Map;
+exports.OrderedMap = OrderedMap;
+exports.List = List;
+exports.Stack = Stack;
+exports.Set = Set;
+exports.OrderedSet = OrderedSet;
+exports.Record = Record;
+exports.Range = Range;
+exports.Repeat = Repeat;
+exports.is = is;
+exports.fromJS = fromJS;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

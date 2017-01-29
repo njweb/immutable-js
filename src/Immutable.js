@@ -22,45 +22,44 @@ import { is } from './is'
 import { fromJS } from './fromJS'
 import { Iterable } from './IterableImpl'
 
-export default {};
-// export default {
+export default {
 
-//   Iterable: Iterable,
+  Iterable: Iterable,
 
-//   // Seq: Seq,
-//   // Collection: Collection,
-//   // Map: Map,
-//   // OrderedMap: OrderedMap,
-//   // List: List,
-//   // Stack: Stack,
-//   // Set: Set,
-//   // OrderedSet: OrderedSet,
+  Seq: Seq,
+  Collection: Collection,
+  Map: Map,
+  OrderedMap: OrderedMap,
+  List: List,
+  Stack: Stack,
+  Set: Set,
+  OrderedSet: OrderedSet,
 
-//   // Record: Record,
-//   // Range: Range,
-//   // Repeat: Repeat,
+  Record: Record,
+  Range: Range,
+  Repeat: Repeat,
 
-//   is: is,
-//   fromJS: fromJS
+  is: is,
+  fromJS: fromJS
 
-// };
+};
 
-// export {
-// 	Iterable,
+export {
+	Iterable,
 
-// 	// Seq,
-// 	// Collection,
-// 	// Map,
-// 	// OrderedMap,
-// 	// List,
-// 	// Stack,
-// 	// Set,
-// 	// OrderedSet,
+	Seq,
+	Collection,
+	Map,
+	OrderedMap,
+	List,
+	Stack,
+	Set,
+	OrderedSet,
 
-// 	// Record,
-// 	// Range,
-// 	// Repeat,
+	Record,
+	Range,
+	Repeat,
 
-// 	// is,
-// 	// fromJS
-// }
+	is,
+	fromJS
+}

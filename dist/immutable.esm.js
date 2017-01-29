@@ -5655,47 +5655,26 @@ function hashMerge(a, b) {
  *  of patent rights can be found in the PATENTS file in the same directory.
  */
 
-var Immutable = {};
-// export default {
+var Immutable = {
 
-//   Iterable: Iterable,
+  Iterable: Iterable,
 
-//   // Seq: Seq,
-//   // Collection: Collection,
-//   // Map: Map,
-//   // OrderedMap: OrderedMap,
-//   // List: List,
-//   // Stack: Stack,
-//   // Set: Set,
-//   // OrderedSet: OrderedSet,
+  Seq: Seq,
+  Collection: Collection,
+  Map: Map,
+  OrderedMap: OrderedMap,
+  List: List,
+  Stack: Stack,
+  Set: Set,
+  OrderedSet: OrderedSet,
 
-//   // Record: Record,
-//   // Range: Range,
-//   // Repeat: Repeat,
+  Record: Record,
+  Range: Range,
+  Repeat: Repeat,
 
-//   is: is,
-//   fromJS: fromJS
+  is: is,
+  fromJS: fromJS
 
-// };
+};
 
-// export {
-// 	Iterable,
-
-// 	// Seq,
-// 	// Collection,
-// 	// Map,
-// 	// OrderedMap,
-// 	// List,
-// 	// Stack,
-// 	// Set,
-// 	// OrderedSet,
-
-// 	// Record,
-// 	// Range,
-// 	// Repeat,
-
-// 	// is,
-// 	// fromJS
-// }
-
-export default Immutable;
+export { Iterable, Seq, Collection, Map, OrderedMap, List, Stack, Set, OrderedSet, Record, Range, Repeat, is, fromJS };export default Immutable;
