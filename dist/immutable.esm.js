@@ -1,9 +1,3 @@
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
-	typeof define === 'function' && define.amd ? define(['exports'], factory) :
-	(factory((global.immutable = global.immutable || {})));
-}(this, (function (exports) { 'use strict';
-
 /**
  *  Copyright (c) 2014-2015, Facebook, Inc.
  *  All rights reserved.
@@ -4901,22 +4895,4 @@ var Immutable = {
 
 };
 
-exports['default'] = Immutable;
-exports.Iterable = Iterable;
-exports.Seq = Seq;
-exports.Collection = Collection;
-exports.Map = Map;
-exports.OrderedMap = OrderedMap;
-exports.List = List;
-exports.Stack = Stack;
-exports.Set = Set;
-exports.OrderedSet = OrderedSet;
-exports.Record = Record;
-exports.Range = Range;
-exports.Repeat = Repeat;
-exports.is = is;
-exports.fromJS = fromJS;
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-})));
+export { Iterable, Seq, Collection, Map, OrderedMap, List, Stack, Set, OrderedSet, Record, Range, Repeat, is, fromJS };export default Immutable;
