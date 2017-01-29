@@ -18,6 +18,7 @@ import invariant from './utils/invariant'
 export class Record extends KeyedCollection {
 
   constructor(defaultValues, name) {
+    super();
     var hasInitialized;
 
     var RecordType = function Record(values) {

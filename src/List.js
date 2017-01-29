@@ -23,6 +23,7 @@ export class List extends IndexedCollection {
   // @pragma Construction
 
   constructor(value) {
+    super(value);
     var empty = emptyList();
     if (value === null || value === undefined) {
       return empty;

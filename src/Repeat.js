@@ -22,6 +22,7 @@ import deepEqual from './utils/deepEqual'
 export class Repeat extends IndexedSeq {
 
   constructor(value, times) {
+    super();
     if (!(this instanceof Repeat)) {
       return new Repeat(value, times);
     }

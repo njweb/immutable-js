@@ -16,6 +16,7 @@ import isArrayLike from './utils/isArrayLike'
 
 export class Seq extends Iterable {
   constructor(value) {
+    super(value);
     return value === null || value === undefined ? emptySequence() :
       isIterable(value) ? value.toSeq() : seqFromValue(value);
   }
@@ -56,6 +57,7 @@ export class Seq extends Iterable {
 
 export class KeyedSeq extends Seq {
   constructor(value) {
+    super(value);
     return value === null || value === undefined ?
       emptySequence().toKeyedSeq() :
       isIterable(value) ?
@@ -71,6 +73,7 @@ export class KeyedSeq extends Seq {
 
 export class IndexedSeq extends Seq {
   constructor(value) {
+    super(value);
     return value === null || value === undefined ? emptySequence() :
       !isIterable(value) ? indexedSeqFromValue(value) :
       isKeyed(value) ? value.entrySeq() : value.toIndexedSeq();
@@ -100,6 +103,7 @@ export class IndexedSeq extends Seq {
 
 export class SetSeq extends Seq {
   constructor(value) {
+    super(value);
     return (
       value === null || value === undefined ? emptySequence() :
       !isIterable(value) ? indexedSeqFromValue(value) :
@@ -132,6 +136,7 @@ Seq.prototype[IS_SEQ_SENTINEL] = true;
 
 export class ArraySeq extends IndexedSeq {
   constructor(array) {
+    super(array);
     this._array = array;
     this.size = array.length;
   }
@@ -166,6 +171,7 @@ export class ArraySeq extends IndexedSeq {
 
 class ObjectSeq extends KeyedSeq {
   constructor(object) {
+    super(object);
     var keys = Object.keys(object);
     this._object = object;
     this._keys = keys;
@@ -214,6 +220,7 @@ ObjectSeq.prototype[IS_ORDERED_SENTINEL] = true;
 
 class IterableSeq extends IndexedSeq {
   constructor(iterable) {
+    super(iterable);
     this._iterable = iterable;
     this.size = iterable.length || iterable.size;
   }
@@ -256,6 +263,7 @@ class IterableSeq extends IndexedSeq {
 
 class IteratorSeq extends IndexedSeq {
   constructor(iterator) {
+    super(iterator);
     this._iterator = iterator;
     this._iteratorCache = [];
   }

@@ -19,6 +19,7 @@ export class OrderedMap extends Map {
   // @pragma Construction
 
   constructor(value) {
+    super(value);
     return value === null || value === undefined ? emptyOrderedMap() :
       isOrderedMap(value) ? value :
       emptyOrderedMap().withMutations(map => {

@@ -12,6 +12,7 @@ import { Iterable } from './Iterable'
 
 export class Collection extends Iterable {
   constructor() {
+  	super();
     throw TypeError('Abstract');
   }
 }
